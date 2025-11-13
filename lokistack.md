@@ -193,8 +193,8 @@ oc create secret generic lokistack-s3 \
 
 Após criar o bucket, o ConfigMap e a Secret, aplique os manifests YAML apresentados a seguir.
 
-Cada recurso contém anotações (annotations) utilizadas pelo ArgoCD, que definem a ordem de aplicação por meio do campo sync-wave.
-Essas mesmas anotações podem ser usadas como referência para uma aplicação manual — basta aplicar cada YAML somente após a criação bem-sucedida do recurso anterior, seguindo a sequência numérica definida em sync-wave.
+Cada recurso contém annotations utilizadas pelo ArgoCD, que definem a ordem de aplicação por meio do campo sync-wave.
+Essas mesmas annotations podem ser usadas como referência para uma aplicação manual. Basta aplicar cada YAML somente após a criação bem-sucedida do recurso anterior, seguindo a sequência numérica definida no sync-wave.
 
 #### 3.1. Namespaces
 
