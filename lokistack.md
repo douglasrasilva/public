@@ -19,7 +19,7 @@ Se o seu ambiente utiliza o *OpenShift Logging* baseado em Elasticsearch e você
 
 ### 1.1. Tornar o Cluster Logging não gerenciado
 
-Isso evita que o operador sobrescreva configurações durante a migração.
+Isso evita que o operator sobrescreva configurações durante a migração.
 
 ```bash
 oc -n openshift-logging patch clusterlogging/instance -p '{"spec":{"managementState": "Unmanaged"}}' --type=merge
@@ -29,7 +29,7 @@ oc -n openshift-logging patch kibana/kibana -p '{"metadata":{"ownerReferences": 
 
 ### 1.2. Remover subscriptions e operators antigos
 
-Elimine as *Subscriptions* e os *ClusterServiceVersions* (CSVs) associados ao operador **Cluster Logging**.
+Elimine as *Subscriptions* e os *ClusterServiceVersions* (CSVs) associados ao operator **Cluster Logging**.
 
 ```bash
 oc -n openshift-logging delete subs cluster-logging 
