@@ -542,7 +542,7 @@ spec:
 > * O bloco `limits.global` foi ajustado para suportar alto volume de logs.
 > * O campo `storage.secret` referencia as credenciais do bucket (`lokistack-s3`), enquanto `tls.caName` aponta para o `ConfigMap` contendo a CA.
 > * `storageClassName: vsphere-csi` integra-se diretamente ao backend do vSphere.
-> * taint e tolerations foi aplicado conforme o machineset de exemplo desse artigo
+> * Foram aplicados tolerations e nodeSelector específicos para direcionar a execução dos componentes do LokiStack aos nodes dedicados (conforme o MachineSet definido anteriormente), garantindo isolamento e previsibilidade de recursos.
 
 ---
 
