@@ -267,7 +267,7 @@ spec:
 
 ### 3.3. Subscriptions
 
-As *Subscriptions* instalam os operadores Loki, Cluster Logging e Cluster Observability Operator a partir do catálogo oficial.
+As *Subscriptions* instalam os operators Loki, Cluster Logging e Cluster Observability Operator a partir do catálogo oficial.
 
 ```yaml
 apiVersion: operators.coreos.com/v1alpha1
